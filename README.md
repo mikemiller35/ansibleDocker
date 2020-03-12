@@ -27,7 +27,7 @@ $ sudo systemctl start docker
 ### Run it
 
 ```
-[mike@Mikes-MBP ansibleDocker ]$ docker run --rm -it --volume $('pwd'):/ansible/playbooks mmiller/ansible 
+[mike@Mikes-MBP ansibleDocker ]$ docker run --rm -it --volume $('pwd'):/ansible/playbooks mmiller/ansible /bin/ash
 /ansible/playbooks # vi /etc/ansible/hosts 
 /ansible/playbooks # cat /etc/ansible/hosts 
 [target]
@@ -55,6 +55,5 @@ PLAY RECAP *********************************************************************
 
 ### What I need to do
 
-- Make the Dockerfile better, it's gross and can be clenaed up
 - Make this a bit more automated and simplify it
 - Get the Docker image into Jfrog or Dockerhub
