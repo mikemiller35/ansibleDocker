@@ -27,12 +27,12 @@ $ sudo systemctl start docker
 ### Run it
 
 ```
-docker pull mmillerlb/ansibleocker
+$ sudo docker pull mmillerlb/ansibledocker
+$ sudo docker run --rm -it --volume $('pwd'):/ansible/playbooks mmillerlb/ansibledocker /bin/ash
 ```
 
 ```
-[mike@Mikes-MBP ansibleDocker ]$ docker run --rm -it --volume $('pwd'):/ansible/playbooks mmiller/ansible /bin/ash
-/ansible/playbooks # vi /etc/ansible/hosts 
+[mike@Mikes-MBP ansibleDocker ]$ docker run --rm -it --volume $('pwd'):/ansible/playbooks mmiller/ansibledocker /bin/ash
 /ansible/playbooks # cat /etc/ansible/hosts 
 [target]
 127.0.0.1
