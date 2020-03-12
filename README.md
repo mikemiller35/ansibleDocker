@@ -27,6 +27,10 @@ $ sudo systemctl start docker
 ### Run it
 
 ```
+docker pull mmillerlb/ansibleocker
+```
+
+```
 [mike@Mikes-MBP ansibleDocker ]$ docker run --rm -it --volume $('pwd'):/ansible/playbooks mmiller/ansible /bin/ash
 /ansible/playbooks # vi /etc/ansible/hosts 
 /ansible/playbooks # cat /etc/ansible/hosts 
