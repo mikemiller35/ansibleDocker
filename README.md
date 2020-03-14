@@ -25,7 +25,7 @@ $ sudo systemctl start docker
 ```
 
 ### Run it
-[![](https://images.microbadger.com/badges/version/mmillerlb/ansibledocker.svg)](https://microbadger.com/images/mmillerlb/ansibledocker "Dockhub Link")
+[![](https://images.microbadger.com/badges/version/mmillerlb/ansibledocker.svg)](https://hub.docker.com/r/mmillerlb/ansibledocker "Dockhub Link")
 
 ```
 $ sudo docker pull mmillerlb/ansibledocker
