@@ -30,6 +30,8 @@ $ sudo systemctl start docker
 ```
 $ sudo docker pull mmillerlb/ansibledocker
 $ sudo docker run --rm -it --volume $('pwd'):/ansible/playbooks mmillerlb/ansibledocker /bin/ash
+## Depending on the networking, might need to run this one
+$ sudo docker run --rm -it --network=host --volume $('pwd'):/ansible/playbooks mmillerlb/ansibledocker /bin/ash
 ```
 
 ```
